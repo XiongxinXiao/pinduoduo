@@ -12,31 +12,31 @@ export class FooterComponent implements OnInit {
   constructor() { }
   tabItems: TabItem[] = [
     {
-      title: '首页',
+      title: 'Home',
       icon: '/assets/tabs/home.png',
       link: 'home',
       selectedIcon: '/assets/tabs/home_selected.png'
     },
     {
-      title: '推荐',
+      title: 'Recommend',
       icon: '/assets/tabs/recommend.png',
       link: 'recommend',
       selectedIcon: '/assets/tabs/recommend_selected.png'
     },
     {
-      title: '分类',
+      title: 'Category',
       icon: '/assets/tabs/category.png',
       link: 'category',
       selectedIcon: '/assets/tabs/category_selected.png'
     },
     {
-      title: '聊天',
+      title: 'Chat',
       icon: '/assets/tabs/chat.png',
       link: 'chat',
       selectedIcon: '/assets/tabs/chat_selected.png'
     },
     {
-      title: '个人中心',
+      title: 'Mine',
       icon: '/assets/tabs/my.png',
       link: 'my',
       selectedIcon: '/assets/tabs/my_selected.png'

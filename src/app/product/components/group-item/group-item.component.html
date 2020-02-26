@@ -3,13 +3,13 @@
   <div class="username">{{ order.startBy }}</div>
   <div class="count-down">
     <div>
-      还差<span class="remaining-number">{{ order.remainingNumber }}人</span
-      >拼成
+      <span class="remaining-number">{{ order.remainingNumber }}</span
+      > more to group
     </div>
     <app-count-down
       [startDate]="startDate"
       [futureDate]="futureDate"
     ></app-count-down>
   </div>
-  <button type="button" class="group-button">去拼单</button>
+  <button type="button" class="group-button">Join Group</button>
 </div>

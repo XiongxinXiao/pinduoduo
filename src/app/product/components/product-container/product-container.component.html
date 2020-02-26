@@ -27,43 +27,41 @@
         [tagSize]="'1rem'"
         [tagBgColor]="'#e02f29'"
         [tagColor]="'#fff'"
-        >返现</span
+        >Cash Reward</span
       >
-      <span class="desc">店铺内消费满39元返2元</span>
+      <span class="desc">get $2 off every $20 purchase</span>
     </div>
     <div class="guarantee">
-      <span>全场包邮</span>
+      <span>Free Ship</span>
       <span>•</span>
-      <span>7天退换</span>
+      <span>Refundable</span>
       <span>•</span>
-      <span>48小时发货</span>
-      <span>•</span>
-      <span>假一赔十</span>
+      <span>Quality Warrenty</span>
     </div>
     <app-group-short-list class="group-short-list"></app-group-short-list>
   </div>
   <div class="toolbar">
     <div class="icon-button">
       <img src="/assets/icons/more.png" alt="" />
-      <div>更多</div>
+      <div>More</div>
     </div>
     <div class="icon-button">
       <img src="/assets/icons/favorite.png" alt="" />
-      <div>收藏</div>
+      <div>Cart</div>
     </div>
     <div class="icon-button">
       <img src="/assets/icons/customer-service.png" alt="" />
-      <div>客服</div>
+      <div>Service</div>
     </div>
     <div class="direct-buy" (click)="handleDirectBuy(productVariants)">
       <div>
         {{ productVariants[selectedIndex].listPrice | currency }}
       </div>
-      <div>直接购买</div>
+      <div>buy directly</div>
     </div>
     <div class="group-buy" (click)="handleGroupBuy(productVariants)">
       <div>{{ productVariants[selectedIndex].price | currency }}</div>
-      <div>发起拼单</div>
+      <div>group buy</div>
     </div>
   </div>
 </ng-container>

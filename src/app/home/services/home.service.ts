@@ -32,7 +32,7 @@ export class HomeService {
   }
   getProductsByTab(tab: string) {
     return this.http.get<Product[]>(`${environment.baseUrl}/products`, {
-      params: { categories_like: tab }
+      params: { categories_like2: tab }
     });
   }
 }

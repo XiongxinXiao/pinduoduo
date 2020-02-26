@@ -8,10 +8,10 @@
       {{ price | currency}}
       <img class="close-button" appCloseDialog src="assets/icons/close.png" />
     </div>
-    <div class="selected-desc">已选择:{{ selectedVariantName }}</div>
+    <div class="selected-desc">chosen:{{ selectedVariantName }}</div>
   </div>
   <div class="content">
-    <div>套餐</div>
+    <div>version</div>
     <div class="variant">
       <div
         *ngFor="let variant of variants; let idx = index"
@@ -34,7 +34,7 @@
           count > 0 && selectedVariantIndex >= 0 ? 'red' : 'darkgray'
       }"
     >
-      确定
+      Confirm
     </button>
   </div>
 </app-dialog>

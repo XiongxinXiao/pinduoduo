@@ -14,8 +14,6 @@ export class OrderService {
       `${environment.baseUrl}/productVariants`,
       {
         params: {
-          _expand: 'product',
-          _embed: 'productVariantImages',
           productId
         }
       }

@@ -1,21 +1,21 @@
 <div class="container" *ngIf="item$ | async as item">
   <div class="title-bar">
     <app-back-button [float]="false"></app-back-button>
-    <span>确认订单</span>
+    <span>Order Confirm</span>
   </div>
   <div class="content">
     <div class="address-bar">
       <img src="assets/icons/location.png" alt="" class="location" />
       <div class="name-and-mobile">
         <span class="name">
-          张三
+          Summer
         </span>
         <span class="mobile">
-          13888888888
+          666 666 6666
         </span>
       </div>
       <div class="address">
-        北京市海淀区某某路111号不知所云大厦123
+        Besserer st, Ottawa
       </div>
       <img src="assets/icons/navigate_next.png" alt="" class="more" />
     </div>
@@ -29,7 +29,7 @@
     </ul>
     <div class="shop">
       <img src="assets/icons/brand.png" alt="" />
-      <span>追梦运动专营店</span>
+      <span>Summer's grocery</span>
     </div>
     <div class="product-bar">
       <img
@@ -38,10 +38,10 @@
         class="product-image"
       />
       <span class="product-name">{{ item.variant.product.title }}</span>
-      <div class="product-spec">款式：{{ item.variant.name }}</div>
+      <div class="product-spec">Version：{{ item.variant.name }}</div>
       <div class="product-price">
-        <span>{{ item.variant.price | currency: 'CNY' }}/件</span>
-        <span class="price-condition">退货包运费</span>
+        <span>{{ item.variant.price | currency: 'CNY' }}/item</span>
+        <span class="price-condition">Free Ship</span>
       </div>
     </div>
     <app-product-amount
@@ -52,14 +52,14 @@
   </div>
   <div class="toolbar">
     <div class="total-price">
-      <span>实付款：</span>
+      <span>Final price：</span>
       <span class="price-section">{{
         totalPrice$ | async | currency: 'CNY'
       }}</span>
-      <span class="price-condition">&nbsp;免邮费</span>
+      <span class="price-condition">&nbsp;</span>
     </div>
     <div class="pay" (click)="handlePay()">
-      <div>立即支付</div>
+      <div>Pay Now</div>
     </div>
   </div>
 </div>

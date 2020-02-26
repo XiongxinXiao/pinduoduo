@@ -6,9 +6,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
 import { SharedModule } from './shared/shared.module';
-import { HomeModule, ParamInterceptor } from './home';
+import { HomeModule, ParamInterceptor, NotificationInterceptor } from './home';
 import { AppRoutingModule } from './app-routing.module';
-import { NotificationInterceptor } from './home/interceptors/ notification.interceptor';
 
 
 @NgModule({
@@ -22,7 +21,7 @@ import { NotificationInterceptor } from './home/interceptors/ notification.inter
     HttpClientModule
   ],
   providers: [
-    {
+    /*{
       provide: HTTP_INTERCEPTORS,
       useClass: ParamInterceptor,
       multi: true
@@ -31,7 +30,7 @@ import { NotificationInterceptor } from './home/interceptors/ notification.inter
       provide: HTTP_INTERCEPTORS,
       useClass: NotificationInterceptor,
       multi: true
-    }
+    }*/
   ],
   bootstrap: [AppComponent]
 })

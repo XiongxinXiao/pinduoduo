@@ -19,45 +19,45 @@ export class MyContainerComponent implements OnInit {
   ) {}
   orderItems = [
     {
-      title: '待付款',
+      title: 'pay',
       icon: '/assets/icons/to_pay.png'
     },
     {
-      title: '待分享',
+      title: 'share',
       icon: '/assets/icons/to_share.png'
     },
     {
-      title: '待发货',
+      title: 'shipping',
       icon: '/assets/icons/to_ship.png'
     },
     {
-      title: '待收货',
+      title: 'confirm',
       icon: '/assets/icons/to_deliver.png'
     },
     {
-      title: '待评价',
+      title: 'rate',
       icon: '/assets/icons/to_review.png'
     }
   ];
   toolsItems = [
     {
-      title: '优惠券',
+      title: 'coupon',
       icon: '/assets/icons/coupon.png'
     },
     {
-      title: '商品收藏',
+      title: 'collection',
       icon: '/assets/icons/fav_product.png'
     },
     {
-      title: '店铺收藏',
+      title: 'shop',
       icon: '/assets/icons/fav_store.png'
     },
     {
-      title: '历史浏览',
+      title: 'history',
       icon: '/assets/icons/history.png'
     },
     {
-      title: '退款售后',
+      title: 'service',
       icon: '/assets/icons/refund.png'
     }
   ];
