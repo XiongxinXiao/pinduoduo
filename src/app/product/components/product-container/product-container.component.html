@@ -8,10 +8,10 @@
   </app-image-slider>
   <div class="price-section">
     <div class="now-price">
-      {{ productVariants[selectedIndex].price | currency }}
+      {{ productVariants[selectedIndex].price | currency:'CAD':'symbol-narrow':'1.0-0' }}
     </div>
     <div class="list-price">
-      {{ productVariants[selectedIndex].listPrice | currency }}
+      {{ productVariants[selectedIndex].listPrice | currency:'CAD':'symbol-narrow':'1.0-0' }}
     </div>
     <div class="sales-count">
       {{ productVariants[selectedIndex].product.priceDesc }}
@@ -55,12 +55,12 @@
     </div>
     <div class="direct-buy" (click)="handleDirectBuy(productVariants)">
       <div>
-        {{ productVariants[selectedIndex].listPrice | currency }}
+        {{ productVariants[selectedIndex].listPrice | currency:'CAD':'symbol-narrow':'1.0-0' }}
       </div>
       <div>buy directly</div>
     </div>
     <div class="group-buy" (click)="handleGroupBuy(productVariants)">
-      <div>{{ productVariants[selectedIndex].price | currency }}</div>
+      <div>{{ productVariants[selectedIndex].price | currency:'CAD':'symbol-narrow':'1.0-0' }}</div>
       <div>group buy</div>
     </div>
   </div>

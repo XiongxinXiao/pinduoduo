@@ -10,8 +10,7 @@
   </div>
   <div class="product-price">
     <span class="price-section">
-      <b>&yen;</b>
-      <h3 class="price">{{ product.price }}</h3>
+      <h3 class="price">{{ product.price | currency:'CAD':'symbol-narrow':'1.0-0'}}</h3>
     </span>
     <span class="price-desc">
       {{ product.priceDesc }}

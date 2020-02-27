@@ -40,7 +40,7 @@
       <span class="product-name">{{ item.variant.product.title }}</span>
       <div class="product-spec">Version：{{ item.variant.name }}</div>
       <div class="product-price">
-        <span>{{ item.variant.price | currency: 'CNY' }}/item</span>
+        <span>{{ item.variant.price | currency }}/item</span>
         <span class="price-condition">Free Ship</span>
       </div>
     </div>
@@ -54,7 +54,7 @@
     <div class="total-price">
       <span>Final price：</span>
       <span class="price-section">{{
-        totalPrice$ | async | currency: 'CNY'
+        totalPrice$ | async | currency:'CAD':'symbol-narrow':'1.0-0'
       }}</span>
       <span class="price-condition">&nbsp;</span>
     </div>
