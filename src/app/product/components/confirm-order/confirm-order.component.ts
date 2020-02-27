@@ -21,18 +21,18 @@ export class ConfirmOrderComponent implements OnInit {
     this.payments = this.payments = [
       {
         id: 1,
-        name: '微信支付',
+        name: 'Wechat Pay',
         icon: 'assets/icons/wechat_pay.png',
-        desc: '50元以内可免密支付'
+        desc: 'cash back reward'
       },
       {
         id: 2,
-        name: '支付宝',
+        name: 'Ali Pay',
         icon: 'assets/icons/alipay.png'
       },
       {
         id: 3,
-        name: '找微信好友支付',
+        name: 'Pay by Wechat friend',
         icon: 'assets/icons/friends.png'
       }
     ];
